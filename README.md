@@ -18,8 +18,8 @@ Le notebook principal couvre  :
 
 ## 🛠️ Reste à faire :
 
-- [ ] Rajouter le monitoring de la VRAM / mémoire utilisée lors des générations.
-- [ ] Rajouter des explications et commentaires sur les goulots d'étranglement : *Memory Bound* vs *Compute/Latency Bound*.
-- [ ] Approfondir le benchmark GPU avec des limites plus poussées (gros batch size, très longues séquences) pour rendre le gain du cache visible.
-- [ ] Séparer explicitement les phases de **Prefill** (traitement du prompt) et de **Decode** (génération token par token) dans le code et les mesures.
-- [ ] Implémenter un KV Cache manuellement (sans utiliser `past_key_values` natif de HF) pour bien en comprendre la structure interne.
+-   Rajouter le monitoring de la VRAM / mémoire utilisée lors des générations.
+-   Rajouter des explications et commentaires sur les goulots d'étranglement : *Memory Bound* vs *Compute/Latency Bound*.
+-   Approfondir le benchmark GPU avec des limites plus poussées (gros batch size, très longues séquences) pour rendre le gain du cache visible.
+-   Séparer explicitement les phases de **Prefill** (traitement du prompt) et de **Decode** (génération token par token) dans le code et les mesures.
+-   Implémenter un KV Cache manuellement (sans utiliser `past_key_values` natif de HF) pour bien en comprendre la structure interne.
